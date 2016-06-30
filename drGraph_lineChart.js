@@ -5,7 +5,7 @@
 *    This software is released under the MIT License.
 *    See LICENSE.txt or http://opensource.org/licenses/mit-license.php
 */
-//the interface for simple graph with frequency of given data: histogram, on Firefox.
+//the interface for simple graph with frequency of given data on Firefox: line chart.
 function drLineChart(){
 //============================================================================
   var slf=this.window,W,r9=slf.Math.random().toFixed(9).replace(/\./g,'');
