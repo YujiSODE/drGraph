@@ -1,12 +1,12 @@
-/* drGraph_histogram.js
+/* drGraph_lineChart.js
 *
 *    Copyright (c) 2016 Yuji SODE <yuji.sode@gmail.com>
 *
 *    This software is released under the MIT License.
 *    See LICENSE.txt or http://opensource.org/licenses/mit-license.php
 */
-//the interface for simple graph with frequency of given data on Firefox: histogram.
-function drHistogram(){
+//the interface for simple graph with frequency of given data on Firefox: line chart.
+function drLineChart(){
 //============================================================================
   var slf=this.window,W,r9=slf.Math.random().toFixed(9).replace(/\./g,'');
   //=== element generator ===
@@ -30,9 +30,9 @@ function drHistogram(){
       u=slf.URL.createObjectURL(b),slf.location.href=u,slf.URL.revokeObjectURL(u);}
   };
   //=== it draws a graph on a given canvas. ===
-  var drGraph=function(V,color,Id){
+var drGraph=function(V,color,Id){
   //Id: canvas id, V: 'xRange@yRange#xMax@xMin,yMax@yMin#x@y,...,x@y'.
-  var dW,dH,X,v,c=slf.document.getElementById(Id).getContext('2d'),
+  var dW,dH,X,v,ar=[],c=slf.document.getElementById(Id).getContext('2d'),
       v0=V.split('#'),
       /*v1=[xRange,yRange];*/
       v1=v0[0].split('@'),
@@ -41,10 +41,12 @@ function drHistogram(){
       /*v3=[x@y,...,x@y]*/
       v3=v0[2].split(',');
   dW=c.canvas.width/+v1[0],dH=c.canvas.height/+v1[1],X=v2[0].split('@');
-    c.beginPath(),c.lineWidth=dW,c.strokeStyle=color,c.globalAlpha=1.0;
-    c.translate(X[1]<0?-X[1]*dW:0,0);
-    for(var i=0;i<v3.length;i+=1){
-      v=v3[i].split('@'),c.moveTo(+v[0]*dW,c.canvas.height),c.lineTo(+v[0]*dW,c.canvas.height-v[1]*dH);}
+  for(var i=0;i<v3.length;i+=1){ar.push(v3[i].split('@'));}
+    ar.sort(function(e0,e1){return e0[0]-e1[0];});
+  c.beginPath(),c.lineWidth=1.0,c.strokeStyle=color,c.globalAlpha=1.0;
+    c.translate(X[1]<0?-X[1]*dW:0,0);c.moveTo(ar[0][0]*dW,c.canvas.height-ar[0][1]*dH);
+    for(var i=1;i<ar.length;i+=1){
+      c.lineTo(ar[i][0]*dW,c.canvas.height-ar[i][1]*dH);}
     c.translate(X[1]<0?X[1]*dW:0,0),c.stroke();
   };
 //============================================================================
