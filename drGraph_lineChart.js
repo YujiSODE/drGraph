@@ -42,13 +42,13 @@ var drGraph=function(V,color,Id){
       v3=v0[2].split(',');
   dW=c.canvas.width/+v1[0],dH=c.canvas.height/+v1[1],X=v2[0].split('@');
   for(var i=0;i<v3.length;i+=1){ar.push(v3[i].split('@'));}
-    ar.sort(function(e0,e1){return e0[0]-e1[0];});
+  ar.sort(function(e0,e1){return e0[0]-e1[0];});
   c.beginPath(),c.lineWidth=1.0,c.strokeStyle=color,c.globalAlpha=1.0;
-    c.translate(X[1]<0?-X[1]*dW:0,0);c.moveTo(ar[0][0]*dW,c.canvas.height-ar[0][1]*dH);
-    for(var i=1;i<ar.length;i+=1){
-      c.lineTo(ar[i][0]*dW,c.canvas.height-ar[i][1]*dH);}
-    c.translate(X[1]<0?X[1]*dW:0,0),c.stroke();
-  };
+  c.translate(X[1]<0?-X[1]*dW:0,0),c.moveTo(ar[0][0]*dW,c.canvas.height-ar[0][1]*dH);
+  for(var i=1;i<ar.length;i+=1){
+    c.lineTo(ar[i][0]*dW,c.canvas.height-ar[i][1]*dH);}
+  c.translate(X[1]<0?X[1]*dW:0,0),c.stroke();
+};
 //============================================================================
 /*id*/
   var divId='div_'+r9,cvsId='cvsId_'+r9,infId='infId_'+r9,fmId='fm_'+r9,iptId='ipt'+r9,BId='B_'+r9,
