@@ -17,7 +17,7 @@ ______
 
 
 1. __Data input__  
-   Set data as csv formatted numbers onto input tag.  
+   Set data as csv formatted numbers to input tag.  
    Color of graph can be selected.  
 
 2. __Drawing graph__  
