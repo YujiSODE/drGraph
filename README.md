@@ -25,17 +25,12 @@ ______
    The graph can be cleared with "Clear canvas" button.  
 
 3. __Others__  
-  "Data input id":  
-  id of input tag for data input.  
+  "Data input id":id of input tag for data input.  
     
-  "Target canvas id":  
-  id of canvas tag where graph is shown.  
+  "Target canvas id":id of canvas tag where graph is shown.  
     
-  "Reset target canvas id" button;  
-  it resets "Target canvas id" with default id.  
+  "Reset target canvas id" button;it resets "Target canvas id" with default id.  
     
-  "Output canvas as png" button;  
-  it output default canvas image as png format.  
+  "Output canvas as png" button;it output default canvas image as png format.  
     
-  "Close" button;  
-  it closes the interface.
+  "Close" button;it closes the interface.
