@@ -24,9 +24,18 @@ ______
    Frequency of given data is shown as a graph with "Run" button.  
    The graph can be cleared with "Clear canvas" button.  
 
-3. __Other interface__  
+3. __Others__  
   "Data input id":  
+  id of input tag for data input.  
+    
   "Target canvas id":  
-  "Reset target canvas id" button:  
-  "Output canvas as png" button:  
-  "Close" button:
+  id of canvas tag where graph is shown.  
+    
+  "Reset target canvas id" button;  
+  it resets "Target canvas id" with default id.  
+    
+  "Output canvas as png" button;  
+  it output default canvas image as png format.  
+    
+  "Close" button;  
+  it closes the interface.
