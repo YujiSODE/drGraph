@@ -8,7 +8,7 @@
 //the interface for simple graph with frequency of given data on Firefox: line chart.
 function drLineChart(){
 //============================================================================
-  var slf=this.window,W,r9=slf.Math.random().toFixed(9).replace(/\./g,'');
+  var slf=window,W,r9=slf.Math.random().toFixed(9).replace(/\./g,'');
   //=== element generator ===
   var f=function(elName,elId,targetId){
     var t=slf.document.getElementById(targetId),E=slf.document.createElement(elName);
