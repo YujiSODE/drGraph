@@ -13,7 +13,7 @@ ______
 
 ##How to use
 * for __Histogram__: call "drHistogram()".  
-* for __Line chart__: call "drHistogram()".
+* for __Line chart__: call "drLineChart()".
 
 
 1. __Data input__  
