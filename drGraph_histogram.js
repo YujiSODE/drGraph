@@ -66,7 +66,7 @@ function drHistogram(){
   for(var i=0;i<5;i+=1){
     ipt[i]=f('input',i+iptId,fm.id),
       ipt[i].type=['text','color','button','button','button'][i],
-      ipt[i].value=['1,2,2,3,3,3,4,4,5,6,7,7,8,8,8,9,9,10','#ff0000','Run','Clear canvas','Close'][i];}
+      ipt[i].value=['1,2,2,3,3,3,4,4,5,6,7,7','#ff0000','Run','Clear canvas','Close'][i];}
   ctrF=f('form','ctr_'+fmId,tgtDiv.id);
   ctrLb=f('label','label'+ctrF.id,ctrF.id),ctrLb.innerHTML='<br>Target canvas id:';
   ctrl[0]=f('input','ipt'+ctrF.id,ctrLb.id);
