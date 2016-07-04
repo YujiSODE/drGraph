@@ -1,5 +1,6 @@
 # drGraph
-The interface for simple graph with frequency of given data on Firefox.
+The interface for simple graph with frequency of given data on Firefox.  
+https://github.com/YujiSODE/drGraph
 
 >Copyright (c) 2016 Yuji SODE \<yuji.sode@gmail.com\>  
 >This software is released under the MIT License.  
