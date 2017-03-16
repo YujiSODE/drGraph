@@ -7,12 +7,12 @@ https://github.com/YujiSODE/drGraph
 >See LICENSE.txt or http://opensource.org/licenses/mit-license.php
 ______
 
-##Scripts
+## Scripts
 * drGraph_histogram.js
 * drGraph_lineChart.js
 
 
-##How to use
+## How to use
 * for __Histogram__: call "drHistogram()".  
 * for __Line chart__: call "drLineChart()".
 
